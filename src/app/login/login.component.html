@@ -1,0 +1,20 @@
+<p class="toplevel-p">
+  name loaded : {{ user.name }}
+  <button (click)="toggleFunction()">expand/collapse</button>
+</p>
+  <div *ngIf="!isCollapsed">
+      <p class="toplevel-p">
+    <br />
+    password loaded : {{ user.password }}
+    <br />
+    user details : {{ user.contactNumbers }}
+    </p>
+  </div>
+  <br />
+  login works! {{ message }}
+<div>
+  <p>user details</p>
+  <p> {{message1.name}}</p>
+  <p> offers </p>
+  <p *ngFor="let offer of message1.offers">{{ offer }}</p>
+</div>
